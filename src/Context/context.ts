@@ -2,11 +2,11 @@ import React, { createContext } from 'react';
 interface themesInterface{
   light: {
     background: React.CSSProperties,
-    foreground:React.CSSProperties,
+    foreground: React.CSSProperties,
   },
   dark: {
     background: React.CSSProperties,
-    foreground:React.CSSProperties,
+    foreground: React.CSSProperties,
   },
   now: string,
   setTheme: (a:string)=>void
@@ -15,6 +15,7 @@ export const themes:themesInterface = {
   light: {
     background: {
       background: '#eef2f5',
+      
       
     },
     foreground: {
