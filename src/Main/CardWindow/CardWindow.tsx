@@ -1,14 +1,20 @@
 import React, { useContext } from 'react';
 
-import './Card.scss';
+import './CardWindow.scss';
 import { Routes, Route, Outlet, Link } from 'react-router-dom';
 import { ThemeContext, typesFortheme } from '../../Context/context';
-const Card = () => {
+const CardWindow = () => {
   const theme = useContext(ThemeContext);
   return (
-    <div className="card-window">
-      <p className="header-card-window">Your cards</p>
-      <div style={{ color: 'white' }} className="flip-card-container">
+    <div
+      style={theme[theme.now as keyof typeof typesFortheme].cardBackground}
+      className="card-window">
+      <p
+        style={theme.now === 'light' ? { color: 'black' } : { color: 'white' }}
+        className="header-card-window">
+        Your cards
+      </p>
+      <div className="flip-card-container">
         <div className="flip-card">
           <div className="card-front">
             <figure>
@@ -90,4 +96,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CardWindow;

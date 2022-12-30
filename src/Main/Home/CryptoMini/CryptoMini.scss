@@ -1,0 +1,22 @@
+.CryptoMini-wrap{
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    .first-row-crypto-mini{
+        display: flex;
+        gap:10px;
+        .name-section-crypto-mini{
+            
+        }
+    }
+    .second-row-crypto-mini{
+        display: flex;
+        gap: 10px;
+        
+    }
+}
